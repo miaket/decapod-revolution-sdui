@@ -1,0 +1,125 @@
+{
+  "type": "PAGE",
+  "component": "AppPage",
+  "props": [],
+  "actions": [],
+  "parameters": [
+    {
+      "type": "SECTION",
+      "component": "MobileHeader",
+      "props": [],
+      "actions": [],
+      "parameters": [
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "BtnBack",
+          "props": [
+            {
+              "key": "iconName",
+              "value": "<"
+            },
+            {
+              "key": "alt",
+              "value": "Back"
+            }
+          ],
+          "parameters": [],
+          "actions": [{
+            "event": "onClick",
+            "functionName": "closeWebview",
+            "parameter": "go back!"
+          }]
+        },
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "TitleH1",
+          "props": [
+            {
+              "key": "text",
+              "value": "page title"
+            }
+          ],
+          "actions": [],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "type": "SECTION",
+      "component": "MainContent",
+      "props": [],
+      "actions": [],
+      "parameters": [
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "TitleH2Parsed",
+          "props": [
+            {
+              "key": "text",
+              "value": "Hey! This is an <strong>example!</strong>"
+            }
+          ],
+          "actions": [],
+          "parameters": []
+        },
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "SimpleTextParsed",
+          "props": [
+            {
+              "key": "text",
+              "value": "This page reads out an json file <i>(which should be fetched from an API)</i>, and renders the react components accordingly"
+            }
+          ],
+          "actions": [],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "type": "SECTION",
+      "component": "ButtonListContent",
+      "props": [],
+      "actions": [],
+      "parameters": [
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "ActionButton",
+          "props": [
+    
+            {
+              "key": "text",
+              "value": "just a button"
+            }
+          ],
+          "actions": [
+            {
+              "event": "onClick",
+              "functionName": "shareLink",
+              "parameter": "button"
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "COMPLEX_COMPONENT",
+          "component": "ActionButton",
+          "props": [
+            {
+              "key": "text",
+              "value": "another button"
+            }
+          ],
+          "actions": [
+            {
+              "event": "onClick",
+              "functionName": "shareLink",
+              "parameter": "another"
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    }
+  ]
+}
