@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App credicard">
+    <div className="App custom-theme">
       { componentToBuild }
     </div>
   );
